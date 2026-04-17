@@ -68,9 +68,6 @@ Contributions are welcome! Please open an issue or submit a pull request.
 9. Create a pull request to the `dev` branch not `main`.
 10. Ensure to describe your pull request.
 
-### License
-
-MIT
 
 ### Acknowledgements
 
