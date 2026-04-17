@@ -1,79 +1,67 @@
-# ![Google Drive Clone](./public/logo.png) Google Drive Clone ![Google Drive Clone](./public/logo.png)
+# Google Drive Clone: Full-Stack Cloud Storage Platform
 
-This project is a clone of Google Drive, providing cloud storage and file management capabilities.
+![Main Showcase](./public/showcase-demo.jpeg)
 
-**Maintained by [nykr1607](https://github.com/nykr1607)**
+**Google Drive Clone** is a robust, full-stack cloud storage application designed to replicate the seamless file management and collaborative experience of the official Google Drive ecosystem. Built with a focus on high-performance state management and real-time data persistence, this platform serves as a production-grade template for scalable cloud solutions.
 
 ---
 
-### Demo
+## 🛠 Technical Architecture
 
-![Desktop mode](./public/desktop.png)
-![Desktop mode](./public/desktop2.png)
-![Tablet mode](./public/tablet.png)
-![Mobile Mode](./public/mobile.png)
+The platform leverages a modern distributed architecture to ensure low latency and high availability:
 
-### Features
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | [Next.js 13](https://nextjs.org/) | Server-side rendering & optimized routing |
+| **Logic** | [React 18](https://react.dev/) | Component-driven UI and state management |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) | Responsive, utility-first design system |
+| **Persistence** | [Firebase](https://firebase.google.com/) | Real-time NoSQL database & blob storage |
+| **Identity** | [NextAuth.js](https://next-auth.js.org/) | Secure OAuth-ready authentication flow |
+| **Verification** | [TypeScript](https://www.typescriptlang.org/) | End-to-end type safety |
 
-- **User Authentication**: The project employs NextAuth.js for user authentication, ensuring secure access to individual user accounts.
+---
 
-- **File Upload and Management**: Users can easily upload files and manage them, making it an ideal solution for storing documents, media files, and more.
+## 🚀 Key Features
 
-- **Search Functionality**: The project includes a powerful search feature that allows users to find files and folders quickly based on their names.
+### 🔐 Secure Multi-Tenant Authentication
+Implemented via **NextAuth.js**, providing secure, isolated user sessions. The system is designed to handle credential-based and OAuth providers, ensuring data privacy across the platform.
 
-- **Folder Navigation**: Users can organize their files into folders and navigate through their directory structure efficiently.
+### 📁 Real-Time File Ecosystem
+Leveraging **Firebase Firestore** and **Storage**, the platform enables instant file uploads, metadata synchronization, and hierarchical folder navigation with zero-refresh updates.
 
-- **Responsive Design**: The user interface is designed to be responsive, adapting to various screen sizes and devices.
+### 🔍 Advanced Search & Discovery
+Integrated indexed search functionality allows for instantaneous retrieval of documents and folders based on naming conventions and metadata tags.
 
-### Technology Stack
+### 📱 Responsive Engineering
+A mobile-first design strategy ensures the interface remains performant and visually consistent across desktop, tablet, and mobile breakpoints.
 
-**Next.js** | **TypeScript** | **Tailwind CSS** | **React** | **Vercel** | **Firebase** | **NextAuth.js**
+---
 
-### How to Run
+## ⚙️ Getting Started
 
-To run the project locally, follow these steps:
+To deploy this environment locally, ensure you have **Node.js 18+** installed.
 
-1. Clone the repository to your local machine.
-2. Install the required dependencies using `npm install`.
-3. Create a Firebase project and configure it for this application.
-4. Set up authentication and real-time database in Firebase.
-5. Configure the environment variables in `.env` checkout [.env.example](./.env.example)
-6. Start the development server using `npm run dev`.
+### 1. Initialization
+```bash
+git clone https://github.com/nykr1607/Google-Drive-Clone.git
+cd Google-Drive-Clone
+npm install
+```
 
-The application should now be running on your local environment. You can access it at [http://localhost:3000](http://localhost:3000).
+### 2. Environment Configuration
+Create a `.env` file in the root directory (referencing `.env.example`) and populate your Firebase and NextAuth credentials.
 
-### Issues and Feedback
+### 3. Execution
+```bash
+npm run dev
+```
 
-If you encounter any issues with the application or have feedback to provide, please feel free to open an issue on the project's GitHub repository.
+The application will be accessible at [http://localhost:3000](http://localhost:3000).
 
-## Branches
+---
 
-- **dev** -> you can make your pull request to this branch
-- **main** -> don't touch this branch this is the production branch
+## 🤝 Contributions & Support
 
-### Contributing
+We welcome technical contributions to enhance the platform's scalability. Please feel free to open architectural discussions in the **Issues** section.
 
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## Contribution Guidelines
-
-1. Clone the repository and check out from `dev` branch.
-2. Open your terminal & set the origin branch to `dev` if not set already.
-3. Pull origin `git pull origin dev`
-4. Create a new branch for the task you were assigned to, eg : `git checkout -b feat-csv-parser`
-5. After making changes, do `git add .`
-6. Commit your changes with a descriptive commit message : `git commit -m "your commit message"`.
-7. To make sure there are no conflicts, run `git pull upstream dev`.
-8. Push changes to your new branch, run `git push -u origin feat-csv-parser`.
-9. Create a pull request to the `dev` branch not `main`.
-10. Ensure to describe your pull request.
-
-
-### Acknowledgements
-
-- Inspired by Google Drive.
-- [Next.js Documentation](https://nextjs.org/docs/getting-started)
-- [Firebase Documentation](https://firebase.google.com/docs)
-- [NextAuth.js Documentation](https://next-auth.js.org/getting-started/introduction)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vercel JS Documentation](https://vercel.com/docs)
+**Maintained by [nykr1607](https://github.com/nykr1607)**
