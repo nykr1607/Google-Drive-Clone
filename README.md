@@ -64,4 +64,4 @@ The application will be accessible at [http://localhost:3000](http://localhost:3
 
 We welcome technical contributions to enhance the platform's scalability. Please feel free to open architectural discussions in the **Issues** section.
 
-**Maintained by [nykr1607](https://github.com/nykr1607) and [Pavansai1611](https://github.com/Pavansai1611)**
+**Maintained by [nykr1607](https://github.com/nykr1607), [Pavansai1611](https://github.com/Pavansai1611), and [suki2811](https://github.com/suki2811)**
